@@ -33,7 +33,7 @@ public class Process extends Bank
 						break;
         		}
         	}
-		while(ch != 4);
-         enterBank();
-    }
+        	while(ch != 4);
+        	enterBank();
+        }
 }

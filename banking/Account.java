@@ -33,8 +33,8 @@ public class Account extends Bank
         System.out.println("Deposit: ");
         dd.setAccountBalance(sc2.nextInt());
 	}
-	  void showBankDetails()
-	  {
+	void showBankDetails()
+	{
 		System.out.println(  dd.getName()+"  Bank Detail "  );
         System.out.println("Account number: "+dd.getAccountNo());
         System.out.println("Name: " + dd.getName());
@@ -43,9 +43,9 @@ public class Account extends Bank
         System.out.println("Email :"+dd.getEmail());
         System.out.println("Address :"+dd.getAddress());
         System.out.println("Balance Amount: Rs/- " + dd.getAccountBalance());
-	  }
-	  void showLoanDetails() 
-	  {
+	 }
+	 void showLoanDetails() 
+	 {
 			System.out.println(dd.getName()+"  Loan Detail  ");
 			System.out.println("Bank Name:"+dd.getBankName());
 		 	System.out.println("Loan Account number: "+dd.getLoanAccountNo());
@@ -57,10 +57,10 @@ public class Account extends Bank
 	        System.out.println("Email :"+dd.getEmail());
 	        System.out.println("Address :"+dd.getAddress());
 	        
-	  }
-	  void downloadSoftcopy()
-	  {
-		  System.out.println(" 1. BankDetail \n 2. LoanDetail");
+	 }
+	 void downloadSoftcopy()
+	 {
+		  System.out.println(" 1. BankDetail \n 2. LoanDetail \n 3. Exit");
 		  int ch=sc.nextInt();
 		  switch(ch)
 		  {
@@ -72,9 +72,12 @@ public class Account extends Bank
 		  			showLoanDetails();
 		  			System.out.println("     Print    \n");
 		  			break;
+		  	default:
+		  			System.out.println("Thankyou):");
+		  			break;
 		  }
 		  
-	  }
+	 }
 			
 	  
 		  

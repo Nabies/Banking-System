@@ -11,8 +11,6 @@ public class Data {
 	 private String email;
 	 private int loanAmount;
 	 private String loanAccountNo;
-	 private int dueAmount;
-	
 	
 	public String getName() {
 		return name;
@@ -73,11 +71,5 @@ public class Data {
 	}
 	public void setLoanAccountNo(String loanAccountNo) {
 		this.loanAccountNo = loanAccountNo;
-	}
-	public int getDueAmount() {
-		return dueAmount;
-	}
-	public void setDueAmount(int dueAmount) {
-		this.dueAmount = dueAmount;
 	}
 }

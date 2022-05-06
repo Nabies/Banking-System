@@ -1,5 +1,4 @@
 package banking;
-
 @SuppressWarnings("serial")
 public class InsufficientFundException extends Exception
 {

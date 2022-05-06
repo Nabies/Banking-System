@@ -55,7 +55,6 @@ public class Withdraw extends Bank
 			case 2:
 				System.out.println("Total balance of your account: Rs/- " + dd.getAccountBalance()+"\n");
 				break;
-	
 		}
 	}
 			

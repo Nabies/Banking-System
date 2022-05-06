@@ -54,7 +54,6 @@ public class Bank
 					System.out.println("Your intreast is 5% \n");
 					break;
 			case 5:
-			
 					System.out.println(" Welcome to Loan Section ");
 					loan.openLoanAcc();
 					break;		
