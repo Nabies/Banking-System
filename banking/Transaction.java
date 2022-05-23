@@ -2,11 +2,11 @@ package banking;
 
 public class Transaction extends Bank
 {
-		Account a=new Account();
-		void trans() 
-		{
+	  void trans() 
+	  {
+			Account a=new Account();
 			int ch;
-			System.out.println(" 1. Bank Transaction \n 2. Loan Transaction ");
+			System.out.println(" 1. Bank Transaction \n 2. Loan Transaction \n 3. Exit");
 			ch=sc.nextInt();
 			switch(ch)
 			{
@@ -30,6 +30,7 @@ public class Transaction extends Bank
 					{
 						System.out.println("Account number not found \n");
 					}
+					break;
 				}
 				case 2:
 				{
@@ -48,8 +49,13 @@ public class Transaction extends Bank
 					}
 					catch(Exception e)
 					{
-						System.out.println("Account number not found \n");
+						System.out.println("Loan Account number not found \n");
 					}
+					break;
+				}
+				default:
+				{
+					System.out.println("Thankyou):");
 				}
 			}
 		}

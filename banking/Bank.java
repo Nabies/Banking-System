@@ -1,6 +1,7 @@
 package banking;
 import java.util.*;
 
+
 public class Bank 
 {
 	static Data dd=new Data();
@@ -16,9 +17,8 @@ public class Bank
 		{
 			enterBank();
 			System.out.println("Do you want Continue with Bank ");
-			System.out.println("1. Continue\n2. Stop");
-			y=sc.nextInt();
-		
+			System.out.println(" 1. YES \n 2. NO");
+			y=sc.nextInt();		
 		}
 		while(y!=2);
 		System.out.println("Thankyou):");
@@ -61,8 +61,7 @@ public class Bank
 					System.out.println("Processing....");
 					t.trans();
 					break;		
-		}
-			
+		}		
 	}		
 }
 

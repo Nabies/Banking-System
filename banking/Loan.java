@@ -8,7 +8,6 @@ import java.util.Scanner;
 public interface Loan 
 {
 	void openLoanAcc();
-	static final String intreasrate="3";
 	
 }
 class Details extends Bank implements Loan 
@@ -91,7 +90,6 @@ class Details extends Bank implements Loan
 		int ch=sc.nextInt();
 		switch(ch) 
 		{
-		
 			
 		}
 		

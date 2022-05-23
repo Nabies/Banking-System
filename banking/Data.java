@@ -1,5 +1,4 @@
 package banking;
-
 public class Data {
 	 private String name;
 	 private String accountNo;

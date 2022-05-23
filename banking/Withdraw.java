@@ -56,6 +56,5 @@ public class Withdraw extends Bank
 				System.out.println("Total balance of your account: Rs/- " + dd.getAccountBalance()+"\n");
 				break;
 		}
-	}
-			
+	}		
 }

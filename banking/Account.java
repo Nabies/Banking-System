@@ -1,5 +1,4 @@
 package banking;
-
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
@@ -32,6 +31,16 @@ public class Account extends Bank
     	System.out.println("Minimum Deposit is 10000 ");
         System.out.println("Deposit: ");
         dd.setAccountBalance(sc2.nextInt());
+        if(dd.getAccountBalance()>=10000)
+        {
+    		System.out.println("Sucessfuly Deposited");
+    	}
+        else 
+        {
+        	System.out.println("Please deposit 10000/-");
+        	openAcc();
+        }
+        
 	}
 	void showBankDetails()
 	{
@@ -50,7 +59,6 @@ public class Account extends Bank
 			System.out.println("Bank Name:"+dd.getBankName());
 		 	System.out.println("Loan Account number: "+dd.getLoanAccountNo());
 		 	System.out.println("Loan Amount:"+dd.getLoanAmount());
-		 	//System.out.println("Due Amount Monthly :"+dd.getLoanAmount()/1);`
 	        System.out.println("Name: " + dd.getName());
 	        System.out.println("Phone Number:"+ dd.getPhoneno());
 	        System.out.println("Pan Number:"+ dd.getPanNo());
@@ -77,12 +85,5 @@ public class Account extends Bank
 		  			break;
 		  }
 		  
-	 }
-			
-	  
-		  
-
-
-	
-	
+	 }	
 }
